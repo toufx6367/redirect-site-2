@@ -3,40 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>リンクボタン</title>
+    <title>ヤバい動画、見逃してない？</title>
     <style>
         body {
             text-align: center;
             padding: 50px;
             font-family: Arial, sans-serif;
-            background-color: #1a1a1a;
+            background-color: #121212;
             color: white;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ff4757;
+            text-shadow: 0 0 15px rgba(255, 71, 87, 0.7);
         }
         .btn {
             display: inline-block;
-            padding: 20px 40px;
-            font-size: 24px;
+            padding: 20px 50px;
+            font-size: 26px;
             font-weight: bold;
             color: white;
-            background-color: #FF3B3B;
+            background: linear-gradient(45deg, #FF3B3B, #FF6347);
             border: none;
-            border-radius: 10px;
+            border-radius: 50px;
             text-decoration: none;
             cursor: pointer;
-            box-shadow: 0 4px 10px rgba(255, 59, 59, 0.5);
-            transition: 0.3s;
+            box-shadow: 0 0 15px rgba(255, 59, 59, 0.7);
+            transition: 0.3s ease-in-out;
+            animation: glow 1.5s infinite alternate;
         }
         .btn:hover {
-            background-color: #C70000;
-            box-shadow: 0 4px 14px rgba(255, 59, 59, 0.8);
-            transform: scale(1.05);
+            background: linear-gradient(45deg, #C70000, #D63447);
+            box-shadow: 0 0 25px rgba(255, 59, 59, 1);
+            transform: scale(1.1);
+        }
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 15px rgba(255, 59, 59, 0.7);
+            }
+            to {
+                box-shadow: 0 0 25px rgba(255, 59, 59, 1);
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>ここから先は…大人だけ</h1>
-    <a href="https://bit.ly/3FyPgpK" class="btn">ここをタップ</a>
+    <h1>ねぇ…ドキドキすること、しよ？</h1>
+    <a href="https://bit.ly/3Y2c2wy" class="btn">こっそり覗く</a>    
+
 
 </body>
 </html>
+
