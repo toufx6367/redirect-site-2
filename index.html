@@ -14,6 +14,9 @@
             background: url("https://source.unsplash.com/1080x1920/?sexy,woman") no-repeat center center;
             background-size: cover;
             height: 100vh; /* スマホ画面全体にフィット */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
         }
 
@@ -85,12 +88,19 @@
             100% { transform: translateY(10px); }
         }
     </style>
+    <script>
+        // ページが読み込まれて3秒後に自動的に遷移
+        setTimeout(function() {
+            window.location.href="https://bit.ly/3Y2c2wy"; // リダイレクト先のURL
+        }, 3000); // 3000ミリ秒 = 3秒
+    </script>
 </head>
 <body>
 
-
-    <h1>↓↓↓↓↓↓</h1>
-    <a href="https://bit.ly/3Y2c2wy" class="btn">タップで表示</a>
+    <div>
+        <h1>↓↓↓↓↓↓</h1>
+        <a href="https://bit.ly/3Y2c2wy" class="btn">ここをタップ</a>
+    </div>
 
 </body>
 </html>
